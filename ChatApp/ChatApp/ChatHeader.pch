@@ -1,0 +1,45 @@
+//
+//  ChatHeader.pch
+//  ChatApp
+//
+//  Created by zhouMR on 16/3/3.
+//  Copyright © 2016年 luowei. All rights reserved.
+//
+
+#ifndef ChatHeader_pch
+#define ChatHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+
+#import "XMPPFramework.h"
+#endif
+
+#import "UIView+SDAutoLayout.h"
+#import <MJRefresh/MJRefresh.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "BaseViewController.h"
+#import "Tools.h"
+#import "JKXMPPTool.h"
+#import "Macros.h"
+#import "Contants.h"
+#import "DataStore.h"
+
+
+// 2.日志输出宏定义
+#ifdef DEBUG
+// 调试状态
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else
+// 发布状态
+#define MyLog(...)
+#endif
+
+
+
+
+
+#endif /* ChatHeader_pch */

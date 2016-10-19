@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="epD-DJ-JiB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--登录-->
+        <scene sceneID="ESJ-cw-6hL">
+            <objects>
+                <viewController id="Hgf-CC-Cv0" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="73g-I7-au0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uqu-xE-H9h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m95-8o-jdx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="q9G-c7-IdR"/>
+                    <connections>
+                        <segue destination="yas-lE-6IM" kind="push" id="KTY-Ld-Gsj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ag-ad-SQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="447"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="ofs-Ik-XqA">
+            <objects>
+                <viewController id="yas-lE-6IM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XGg-B6-Y4v"/>
+                        <viewControllerLayoutGuide type="bottom" id="rBB-OW-Ahj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ti-OE-uhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="mhJ-PF-nLC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YV-Ji-fZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="447"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lgk-Sc-Gk4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="epD-DJ-JiB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cRT-Mv-LfY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hgf-CC-Cv0" kind="relationship" relationship="rootViewController" id="nfg-Wf-BRk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsZ-Xy-vK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="447"/>
+        </scene>
+    </scenes>
+</document>

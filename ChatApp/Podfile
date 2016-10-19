@@ -1,0 +1,9 @@
+target :ChatApp do
+
+pod 'AFNetworking', '~> 2.0'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'YTKKeyValueStore'
+
+end
